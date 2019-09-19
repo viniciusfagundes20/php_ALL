@@ -1,0 +1,133 @@
+/*@Vinicin bad's*/
+
+html, body, .capa {
+	height: 100%;
+}
+
+body {
+	
+	
+ 	background: url('../imagens/bolinhas.jpg') no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover; /* SAFARI / CHROME */
+	-moz-background-size: cover; /* FIREFOX */
+	-ms-background-size: cover; /* IE */
+	-o-background-size: cover; /* OPERA */
+	background-attachment: fixed;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	overflow-x: hidden; /* barra de navegação oculta */
+
+}
+
+h1 {
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em; /*Distância de letras*/
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+.capa {
+	display: table;
+	width: 100%;
+}
+
+.texto-capa {
+	text-align: center;
+	color: #FFFFFF;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+nav.navbar-transparente{
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+    color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,  footer .nav a:hover {
+    color: #9bf0e1;
+    background: none;
+}
+
+
+/*section */
+
+#services {
+	background: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#services h2, #services h3 {
+	color: #7c25f8;
+}
+
+.albuns {
+	padding: 10px 0px;
+}
+
+
+/*recursos*/
+#recursos {
+	color: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#recursos h3{
+	color: #9bf0e1;
+}
+
+.rotacionar {
+	transform: rotate(30deg); /* rotacionar*/
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+/*rodapé*/
+
+footer {
+	background: #000;
+	padding: 50px 0px 10px 0px;
+	position: relative;
+	margin-top: 120px;
+}
+
+#rodape h4 {
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.item-social {
+	float: right;
+}

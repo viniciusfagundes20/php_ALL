@@ -1,0 +1,70 @@
+body, h1, h2, h3, p, ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: Georgia, serif;
+  color: #252525;
+  font-size: 18px !important;
+}
+
+li{
+  list-style: none;
+}
+
+nav ul li.menu a{
+	color: #FFF !important;
+}
+nav ul li.menu a:hover{
+	color: #000 !important;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+header .header-main {
+
+
+}
+
+footer.footer {
+
+  height: 60px;
+
+}
+
+.carousel-item img {
+  max-height: 600px;
+  max-width: 100%;
+  position: relative !important;
+}
+
+#carousel {
+
+  height: 500;
+
+}
+
+
+.ATXSW56 {
+
+  background: #dc3545;
+  display: block;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 2em;
+
+}
+
+.card-personalizado {
+
+  height: 300px;
+  width: 100%;
+  position: relative;
+  display: block;
+
+}
+

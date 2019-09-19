@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS-Posicionamento</title>
+
+<style type="text/css">
+	
+	body{
+		background: #00BFFF;
+	}
+
+	#conteudo-principal{
+		background: #FFFFFF;
+		padding: 10px;
+		width: 98%;
+		height: 2500px;
+		margin-top: 9em;
+		position: absolute;
+		left: 0;
+		right: 0;
+
+	}
+
+	.boxID{
+		background: #00BFFF;
+		width: 100px;
+		height: 100px;
+		color: #FFFFFF;
+		margin-top: 1em;
+	}
+
+	#relative{
+		position: relative;
+		left: 30px;
+	}
+
+	#absolute{
+		position: absolute;
+		bottom: 0;
+		right: 30px;
+	}
+
+
+
+	#fixed{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		top: 0;
+	}
+
+
+</style>
+
+
+</head>
+<body>
+		
+		
+	<div id="conteudo-principal">
+		<h1>Conteúdo</h1>
+		<h4>Posicionamento relativo</h4>
+		<span>relative</span>
+		<div id="relative" class="boxID">Relative</div>
+		<span>Absolute</span>
+		<div id="absolute" class="boxID">Absolute</div>
+		<div id="fixed" class="boxID">MENU-Fixed</div>
+			<span>Fixed</span>
+
+	</div>
+
+
+</body>
+</html>

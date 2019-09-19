@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formatar-text</title>
+</head>
+<meta charse="utf-8"/>
+
+<style type="text/css">
+
+	div{
+		font-size: 30px;
+		font-family: arial, serif;
+	}
+	
+	.texto{
+		font-size: 1em;
+		/*  px, %, em-> define de forma propocional !  */
+	}
+
+	.negrito{
+		font-weight: bold; /*100 ate 900 */
+		
+	}
+
+	#italic{
+		font-style: italic;
+	}
+
+	.texto-padrao{
+		font: bold 40px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+
+	.formatacao{
+		/*text-decoration: underline;
+		text-decoration: overline;*/
+		text-decoration: line-through;
+	}
+
+</style>
+
+
+
+<body>
+
+	<div>
+		<p id="italic">
+			Lorem ipsum <span class="formatacao">dolor</span> sit amet, consectetur adipiscing elit.
+		</p>
+		<p class="negrito">Conteúdo em negrito !</p>
+
+		<p class="texto-padrao">
+			Esse é um texto padrão !
+		</p>
+
+	</div>
+</body>
+</html>

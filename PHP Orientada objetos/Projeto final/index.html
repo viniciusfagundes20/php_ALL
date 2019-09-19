@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<title>JM-Viagens Página principal</title>
+	<meta charset="utf-8"/>
+
+	<style type="text/css">
+		a{
+			color: #6A5ACD;
+			text-decoration: none;
+			margin-left: 10px;
+		}
+		a:hover{
+
+		}
+	</style>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$('.btn_carregar_conteudo').click(function(){
+				var nameID = this.id;
+				nameID = nameID + '.html';
+
+				$.ajax({
+					url: nameID,
+					success: function(data){
+						$('#div_conteudo').html(data);
+					},
+					beforeSend:function(){
+						$('#carregar_url_gif').css({display: 'block'});
+						$('#div_conteudo').css({display: 'none'});
+					},
+					complete:function(){
+						$('#carregar_url_gif').css({display: 'none'});
+						$('#div_conteudo').css({display: 'block'});
+					}
+
+				})
+
+
+			})
+
+
+		})
+		
+
+		
+
+	</script>
+
+
+</head>
+<body style="font-family: Trebuchet MS, Helvetica, sans-serif; font-size: 15px;">
+	<table border="0" width="900" align="center">
+		<thead>
+			<tr>
+			<td align="lefth"><img src="imagens/logo.png" /></td>
+			<td align="right">
+			<h3>
+			<a href="index.html">Página principal</a> &#124;
+			<a href="#" id="quem_somos" class="btn_carregar_conteudo">Quem somos</a> &#124;
+			<a href="#" id="contato" class="btn_carregar_conteudo">Contato</a><br/></h3>
+		</td>
+		</tr>
+		</thead>
+	</table>
+	<div id="carregar_url_gif" align="center" style="display: none;">
+		<img src="imagens/carregando.gif" height="500" width="500">
+		
+	</div>
+	<div id="div_conteudo">
+
+		<table border="0" width="900" align="center">
+		<tr>
+			<td colspan="2" align="center"><img src="imagens/principal.png"/></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis eleifend risus, sed hendrerit sapien semper vel. Duis finibus, risus non suscipit laoreet, odio enim placerat nulla, eu facilisis eros justo eget purus. Donec a molestie magna. Sed ultricies viverra metus, in eleifend purus condimentum a. Cras congue odio nec ipsum faucibus, rhoncus malesuada libero blandit. Fusce massa urna, tempor sed volutpat nec, feugiat vitae ipsum. Aliquam a vulputate mi, a porttitor risus. Sed in dui elementum, ullamcorper ante vel, blandit nunc.</p>
+				<p></p>
+				Vivamus urna lorem, laoreet at mollis ultrices, condimentum sed augue. Fusce at gravida nunc, ut blandit urna. Praesent ut dictum lacus, et interdum augue. Donec maximus sit amet nulla et aliquam. Vestibulum viverra mi tellus, euismod maximus mauris accumsan a. Aliquam imperdiet placerat metus, vel congue odio euismod sed. Donec et pretium risus, et eleifend leo. Suspendisse placerat ullamcorper imperdiet. Suspendisse sit amet porta justo, id dapibus purus. Ut eu fermentum dolor, ut ullamcorper turpis. Integer sit amet augue risus. Nunc suscipit sagittis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur ut velit vitae erat efficitur imperdiet. Quisque leo metus, efficitur vitae tortor quis, tempus facilisis tortor. Integer rhoncus sapien id convallis consequat.</p>
+			</td>
+		</tr>
+		<tr>
+		 	<td colspan="2" align="center"><strong>&#169;Todos os direitos reservados</strong></td>
+		</tr>
+	</table>
+	</div>
+	
+
+</body>
+</html>

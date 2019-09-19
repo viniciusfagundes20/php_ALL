@@ -1,0 +1,17 @@
+{
+	"name": "Vinicius",
+	"description": "projeto PHP",
+	"authors":[
+		{
+			"name": "Vinicin fagundes",
+			"email": "Vinicinpointb4nd@gmail.com"
+		}
+	],
+	"require":{},
+	"autoload":{
+		"psr-4":{
+			"sts\\":"app/sts",
+			"core\\": "core"
+		}
+	}
+}

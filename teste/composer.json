@@ -1,0 +1,16 @@
+{
+    "name": "vanusa_fagundes",
+    "description": "Espaço vanusa_fagundes",
+    "authors": [
+        {
+            "name": "vinicius",
+            "email": "vinicinpointb4nd@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "teste\\": "teste"
+        }
+    },
+    "require": {}
+}

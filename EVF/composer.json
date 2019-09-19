@@ -1,0 +1,19 @@
+{
+    "name": "vanusa",
+    "description": "Projeto vanusaFagundes",
+    "authors": [
+        {
+            "name": "vinicin.fagundes",
+            "email": "vinicinpointb4nd@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Core\\" : "core",
+            "Sts\\": "app/sts"
+        }
+    },
+    "require": {
+        
+    }
+}
